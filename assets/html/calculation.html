@@ -25,17 +25,16 @@
     <div class="calculator">
         <h2>Calculation of Perimeter</h2>
         <p>Select the following one of the polygons to find the Perimeter</p>
-        <select>
+        <select id="mySelect">
             <option value="Triangle">Triangle</option>
             <option value="Square">Square</option>
-            <option value="Rectangle">Rectangle</option>
             <option value="Pentagon">Pentagon</option>
             <option value="Hexagon">Hexagon</option>
         </select>
         <br>
-        <input type="number" min="1" placeholder="Side of the polygon"><br>
-        <button>Click to find Perimeter</button>
-        <label>Your output displays here.</label>
+        <input id="value" type="number" min="1" placeholder="Side of the polygon"><br> <!-- already validated in p2 itself by attributes type and min so input can be only string and its min value should be 1 -->
+        <button onclick="findPerimeter()">Click to find Perimeter</button>
+        <label id="output">Your output displays here.</label>
     </div>
     <footer>
         <div class="row footerContent">
@@ -57,6 +56,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/calculation.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
